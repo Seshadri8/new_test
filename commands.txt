@@ -1,0 +1,40 @@
+Vishnu@DESKTOP-JAR4251 MINGW64 ~
+$ mkdir demo
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~
+$ cd demo
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo
+$ git init
+Initialized empty Git repository in C:/Users/Vishnu/demo/.git/
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo (master)
+$ git add Git.txt
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo (master)
+$ git commit -m "First"
+[master (root-commit) 8787f92] First
+ 1 file changed, 120 insertions(+)
+ create mode 100644 Git.txt
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo (master)
+$ git remote add origin https://github.com/Seshadri8/new_test.git
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/demo (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.12 KiB | 573.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Seshadri8/new_test.git
+ * [new branch]      master -> master
