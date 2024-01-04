@@ -1,0 +1,120 @@
+Vishnu@DESKTOP-JAR4251 MINGW64 ~
+$ git --version
+git version 2.43.0.windows.1
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~
+$ mkdir test
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~
+$ cd test
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test
+$ git init
+Initialized empty Git repository in C:/Users/Vishnu/test/.git/
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git add demo.txt
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git commit -m "Commiting the new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Vishnu@DESKTOP-JAR4251.(none)')
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git commit -m "Commiting the new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Vishnu@DESKTOP-JAR4251.(none)')
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ ^C
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git commit -m "Commiting the new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Vishnu@DESKTOP-JAR4251.(none)')
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ ^[[200~git config --global user.email "seshadri.ssh55@gamil.com"
+bash: $'\E[200~git': command not found
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git config --global user.email "seshadri.ssh55@gamil.com"
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git config --global user.name "seshadri"
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git commit -m "Commiting the new file"
+[master (root-commit) c18aa44] Commiting the new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git remote add origin https://github.com/Seshadri5/test_demo.git
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git push origin master
+fatal: User cancelled dialog.
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Seshadri5/test_demo.git/'
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Seshadri5/test_demo.git
+ * [new branch]      master -> master
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ git remote add origin https://github.com/Seshadri8/test_demo.git
+error: remote origin already exists.
+
+Vishnu@DESKTOP-JAR4251 MINGW64 ~/test (master)
+$ ssh -i "vishnu.pem" ec2-user@ec2-13-230-166-167.ap-northeast-1.compute.amazonaws.com
